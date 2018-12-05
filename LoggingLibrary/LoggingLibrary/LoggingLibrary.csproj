@@ -30,7 +30,7 @@
     
     <!--TODO: Fill these in-->
     <PackageLicenseUrl>https://github.com/tomohak/nuget/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/tomohak/nuget</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/tomohak/nuget/tree/master/LoggingLibrary</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tomohak/nuget</RepositoryUrl>
     <PackageReleaseNotes>Test Plugin</PackageReleaseNotes>
     <PackageIconUrl></PackageIconUrl>
