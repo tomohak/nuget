@@ -11,12 +11,12 @@
     -->
     <AssemblyName>Plugin.LoggingLibrary</AssemblyName>
     <RootNamespace>Plugin.LoggingLibrary</RootNamespace>
-    <PackageId>Plugin.LoggingLibrary</PackageId>
+    <PackageId>LoggingLibrary.tomohak</PackageId>
     
-    <Product>$(AssemblyName) ($(TargetFramework))</Product>
+    <Product>LoggingLibrary.tomohak</Product>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.0-alpha</Version>
     <PackageVersion>1.0.0.0</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
@@ -33,7 +33,7 @@
     <PackageProjectUrl>https://github.com/tomohak/nuget/tree/master/LoggingLibrary</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tomohak/nuget</RepositoryUrl>
     <PackageReleaseNotes>Test Plugin</PackageReleaseNotes>
-    <PackageIconUrl></PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/tomohak/nuget/master/LoggingLibrary/icon.png</PackageIconUrl>
     <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, LoggingLibrary</PackageTags>
     
     <Title>LoggingLibrary Plugin for Xamarin and Windows</Title>
