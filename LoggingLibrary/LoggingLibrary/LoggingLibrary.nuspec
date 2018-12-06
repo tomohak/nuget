@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>LoggingLibrary.tomohak</id>
-    <version>1.0.0-alpha</version>
+    <version>1.0.1</version>
     <title>LoggingLibrary</title>
     <authors>tomohak</authors>
     <owners>tomohak</owners>

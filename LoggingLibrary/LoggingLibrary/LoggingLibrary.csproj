@@ -1,4 +1,4 @@
-<Project Sdk="MSBuild.Sdk.Extras/1.6.61">
+﻿<Project Sdk="MSBuild.Sdk.Extras/1.6.61">
 
   <PropertyGroup>
     <!--Work around so the conditions work below-->
@@ -14,10 +14,10 @@
     <PackageId>LoggingLibrary.tomohak</PackageId>
     
     <Product>LoggingLibrary.tomohak</Product>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
-    <Version>1.0.0-alpha</Version>
-    <PackageVersion>1.0.0.0</PackageVersion>
+    <Version>1.0.1</Version>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
@@ -29,11 +29,11 @@
     <LangVersion>latest</LangVersion>
     
     <!--TODO: Fill these in-->
-    <PackageLicenseUrl>https://github.com/tomohak/nuget/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/tomohak/nuget/tree/master/LoggingLibrary</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/tomohak/nuget</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/tomohak/plugins/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/tomohak/plugins/tree/master/LoggingLibrary</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tomohak/plugins</RepositoryUrl>
     <PackageReleaseNotes>Test Plugin</PackageReleaseNotes>
-    <PackageIconUrl>https://raw.githubusercontent.com/tomohak/nuget/master/LoggingLibrary/icon.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/tomohak/plugins/master/LoggingLibrary/icon.png</PackageIconUrl>
     <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, LoggingLibrary</PackageTags>
     
     <Title>LoggingLibrary Plugin for Xamarin and Windows</Title>
@@ -41,9 +41,10 @@
     <Description>Test Plugin</Description>
     
     
-    <Owners>YOU</Owners>
+    <Owners>tomohak</Owners>
     <Authors>tomohak</Authors>
     <Copyright>Copyright 2018</Copyright>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
@@ -80,6 +81,10 @@
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
     <Compile Include="**\*.apple.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="LoggingLibrary.nuspec" />
   </ItemGroup>
 
   <!--Additional item groups-->
