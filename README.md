@@ -4,4 +4,4 @@ Xamarin.Forms plugins
 
 # Dependency
 * Xamarin.Forms 3.4.0.1008975
-* Windows 10 SDK Version 1803(10.0.16299)
+* Windows 10 SDK Version 1709(10.0.16299)
