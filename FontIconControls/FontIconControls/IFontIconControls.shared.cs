@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Plugin.FontIconControls
+﻿namespace Plugin.FontIconControls
 {
+    /// <summary>
+    /// Interface for FontIconControls
+    /// </summary>
     public interface IFontIconControls
     {
+        void Init();
     }
 }

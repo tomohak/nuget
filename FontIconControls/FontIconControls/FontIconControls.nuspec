@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Plugin.FontIconControls</id>
+    <version>0.1.0</version>
+    <title>Plugin.FontIconControls</title>
+    <authors>tomohak</authors>
+    <owners>tomohak</owners>
+    <licenseUrl>https://github.com/tomohak/xf-plugins/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/tomohak/xf-plugins/tree/master/FontIconControls</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FontIconControls Plugin for Xamarin and Windows</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2018 tomohak</copyright>
+    <tags>xamarin, windows, xamarin.forms, plugin, FontIconControls</tags>
+  </metadata>
+  <files>
+    <file src="bin\Debug\netstandard2.0\Plugin.FontIconControls.dll" target="lib\netstandard2.0\Plugin.FontIconControls.dll" />
+    <file src="bin\Debug\uap10.0.16299\Plugin.FontIconControls.dll" target="lib\uap10.0.16299\Plugin.FontIconControls.dll" />
+    <file src="bin\Debug\uap10.0.16299\Plugin.FontIconControls.pri" target="lib\uap10.0.16299\Plugin.FontIconControls.pri" />
+    <file src="bin\Debug\uap10.0.16299\Plugin.FontIconControls.xr.xml" target="lib\uap10.0.16299\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" />
+    <!-- XAML controls -->
+    <file src="FontIconTabbedPage\Themes\Generic.xaml" target="lib\uap10.0.16299\Plugin.FontIconControls\FontIconTabbedPage\Themes"/>
+    <file src="bin\Debug\uap10.0.16299\FontIconTabbedPage\Themes\Generic.xbf" target="lib\uap10.0.16299\Plugin.FontIconControls\FontIconTabbedPage\Themes"/>
+  </files>
+</package>
