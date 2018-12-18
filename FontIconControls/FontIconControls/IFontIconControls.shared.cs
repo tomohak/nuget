@@ -5,6 +5,9 @@
     /// </summary>
     public interface IFontIconControls
     {
+        /// <summary>
+        /// Init
+        /// </summary>
         void Init();
     }
 }

@@ -9,6 +9,9 @@ namespace Plugin.FontIconControls
     /// </summary>
     public class FontIconControlsImplementation : IFontIconControls
     {
+        /// <summary>
+        /// Init
+        /// </summary>
         public void Init()
         {
         }
