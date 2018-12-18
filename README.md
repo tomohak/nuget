@@ -1,6 +1,6 @@
 # xf-plugins
 Xamarin.Forms plugins
-* **FontIconControls** - simple plugin of using FontIcon for UWP(Xamarin.Forms).
+* **[FontIconControls](https://github.com/tomohak/xf-plugins/tree/master/FontIconControls)** - simple plugin of using FontIcon for UWP(Xamarin.Forms).
 
 # Dependency
 * Xamarin.Forms 3.4.0.1008975
