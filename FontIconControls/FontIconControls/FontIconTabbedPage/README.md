@@ -17,6 +17,7 @@ Custom TabbedPage control with FontIcon for UWP in Xamarin.Forms project.
 #### USAGE
 
 Add the xmlns namespace to the MainPage.xaml in your Shared project:
+
 ```xml
 xmlns:controls="clr-namespace:Plugin.FontIconControls;assembly=Plugin.FontIconControls"
 ```
@@ -24,7 +25,8 @@ xmlns:controls="clr-namespace:Plugin.FontIconControls;assembly=Plugin.FontIconCo
 Change the control from TabbedPage to FontIconTabbedPage:
 
 * MainPage.xaml
-```xml
+
+```xml:MainPage.xaml
 <?xml version="1.0" encoding="utf-8" ?>
 <controls:FontIconTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -36,7 +38,8 @@ Change the control from TabbedPage to FontIconTabbedPage:
 ```
 
 * MainPage.xaml.cs
-```
+
+```C#:MainPage.xaml.cs
 namespace Sample.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -50,8 +53,10 @@ namespace Sample.Views
 }
 ```
 
-Add the Icon property value for UWP with Unicode point of [Segoe MDL2 icons](https://docs.microsoft.com/en-us/windows/uwp/design/style/segoe-ui-symbol-font).
-```xml
+Add the Icon property value for UWP with Unicode point of [Segoe MDL2 icons](https://docs.microsoft.com/en-us/windows/uwp/design/style/segoe-ui-symbol-font):
+* MainPage.xaml
+
+```xml:MainPage.xaml
 <NavigationPage Title="Browse">
     <NavigationPage.Icon>
         <OnPlatform x:TypeArguments="FileImageSource">
