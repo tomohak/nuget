@@ -50,7 +50,7 @@ namespace Sample.Views
 }
 ```
 
-Add the Icon property value for UWP with Unicode point string.  
+Add the Icon property value for UWP with Unicode point of [Segoe MDL2 icons](https://docs.microsoft.com/en-us/windows/uwp/design/style/segoe-ui-symbol-font).
 ```xml
 <NavigationPage Title="Browse">
     <NavigationPage.Icon>
