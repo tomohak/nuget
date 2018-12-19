@@ -33,7 +33,7 @@ namespace Plugin.FontIconControls.UWP.FontIconTabbedPage.Renderers
                             </StackPanel>
                         </DataTemplate>";
 
-                var template = (Windows.UI.Xaml.DataTemplate)XamlReader.LoadWithInitialTemplateValidation(xamlStr);
+                var template = (Windows.UI.Xaml.DataTemplate)XamlReader.Load(xamlStr);
 
                 if (template != null)
                     Control.HeaderTemplate = template;
