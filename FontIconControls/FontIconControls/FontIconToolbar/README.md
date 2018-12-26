@@ -58,8 +58,8 @@ Add the Icon property value to ContentPage for UWP with Unicode point of [Segoe 
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-		...
-	</ContentPage.Content>
+	...
+    </ContentPage.Content>
 </ContentPage>
 ```
 
