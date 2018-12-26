@@ -10,10 +10,11 @@ Simple controls for UWP with Xamarin.Forms.
 
 |Platform|Version|
 | -------------------  | :------------------: |
-|Windows 10 UWP|10.0.16299|
+|Windows 10 UWP|10.0.16299, 10.0.17134|
 
 #### CONTROL
 * **[FontIconTabbedPage](https://github.com/tomohak/xf-plugins/tree/master/FontIconControls/FontIconControls/FontIconTabbedPage)** - Custom TabbedPage control with FontIcon for UWP in Xamarin.Forms project.
+* **[FontIconToolbar](https://github.com/tomohak/xf-plugins/tree/master/FontIconControls/FontIconControls/FontIconToolbar)** - Custom Toolbar style with FontIcon for UWP in Xamarin.Forms project.
 
 #### LISENCE
 MIT
