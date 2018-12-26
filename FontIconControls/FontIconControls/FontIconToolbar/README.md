@@ -16,9 +16,9 @@ Custom Toolbar style with FontIcon for UWP in Xamarin.Forms project.
 
 #### USAGE
 
-Add the resource dictionary to App.xaml:
+Add the resource dictionary to App.xaml(UWP project):
 
-* App.xaml
+* App.xaml(UWP)
 
 ```xml:App.xaml
 <Application
