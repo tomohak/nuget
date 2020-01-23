@@ -12,7 +12,7 @@ Custom Toolbar style with FontIcon for UWP in Xamarin.Forms project.
 
 |Platform|Version|
 | -------------------  | :------------------: |
-|Windows 10 UWP|10.0.16299, 10.0.17134|
+|Windows 10 UWP|10.0.16299, 10.0.17134, 10.0.18362|
 
 #### USAGE
 
