@@ -1,12 +1,12 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras/1.6.61">
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
 
   <PropertyGroup>
     <!--Work around so the conditions work below-->
     <TargetFrameworks></TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard2.0;uap10.0.17134</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard2.0;uap10.0.18362</TargetFrameworks>
     <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard2.0</TargetFrameworks>
     <!--Feel free to add as many targets as you need below
-    netstandard1.0;netstandard2.0;MonoAndroid81;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
+    netstandard1.0;netstandard2.0;MonoAndroid81;Xamarin.iOS10;uap10.0.18362;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
     For UWP update the version number with a version number you have installed.
     -->
     <AssemblyName>Plugin.FontIconControls</AssemblyName>
@@ -22,6 +22,12 @@
     <PackageVersion>0.1.2</PackageVersion>-->
 
     <!-- 10.0.17134 -->
+    <!--<AssemblyVersion>1.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0</AssemblyFileVersion>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>-->
+
+    <!-- 10.0.18362 -->
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0</AssemblyFileVersion>
     <Version>1.0.0</Version>
@@ -52,7 +58,7 @@
     
     <Owners>YOU</Owners>
     <Authors>YOU</Authors>
-    <Copyright>Copyright 2018</Copyright>
+    <Copyright>Copyright 2020</Copyright>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -68,7 +74,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991477" />
     <Compile Include="**\*.shared.cs" />
   </ItemGroup>
 
@@ -76,7 +82,7 @@
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('uap10.0')) ">
-    <Compile Include="**\*.uwp.cs" />
+    <Compile Include="**\*.uwp.cs" Exclude="FontIconTabbedPage\Converters\FileImageSourceToFontIconConverter.uwp.cs;FontIconToolbar\Converters\BitmapIconToFontIconConverter.uwp.cs" />
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,6 +100,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="FontIconControls_uap10.0.16299.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FontIconControls_uap10.0.17134.nuspec">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

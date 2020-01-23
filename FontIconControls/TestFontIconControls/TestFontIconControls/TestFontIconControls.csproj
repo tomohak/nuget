@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Plugin.FontIconControls" Version="1.0.0" />
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />  
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991477" />  
   </ItemGroup>
 
   <ItemGroup>

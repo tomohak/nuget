@@ -300,7 +300,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <!-- FormsCommandBarStyle
          https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml -->
     <Style x:Key="EllipsisButton" TargetType="Button">
@@ -1122,7 +1122,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <Style TargetType="uwp:FormsCommandBar" BasedOn="{StaticResource CustomFormsCommandBarStyle}"/>
 
 </ResourceDictionary>
