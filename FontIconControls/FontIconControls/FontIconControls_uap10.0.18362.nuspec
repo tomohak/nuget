@@ -28,24 +28,24 @@
   <files>
     <!-- Release -->    
     <!-- netstandard2.0 -->
-    <!-- <file src="bin\Release\netstandard2.0\Plugin.FontIconControls.dll" target="lib\netstandard2.0\Plugin.FontIconControls.dll" /> -->
+    <file src="bin\Release\netstandard2.0\Plugin.FontIconControls.dll" target="lib\netstandard2.0\Plugin.FontIconControls.dll" />
     <!-- uap10.0.18362-->
-    <!-- <file src="bin\Release\uap10.0.18362\Plugin.FontIconControls.dll" target="lib\uap10.0.18362\Plugin.FontIconControls.dll" />
+    <file src="bin\Release\uap10.0.18362\Plugin.FontIconControls.dll" target="lib\uap10.0.18362\Plugin.FontIconControls.dll" />
     <file src="bin\Release\uap10.0.18362\Plugin.FontIconControls.pri" target="lib\uap10.0.18362\Plugin.FontIconControls.pri" />
     <file src="bin\Release\uap10.0.18362\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" target="lib\uap10.0.18362\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" />
     <file src="Themes\10.0.18362\Generic.xaml" target="lib\uap10.0.18362\Plugin.FontIconControls\Themes"/>
     <file src="obj\Release\uap10.0.18362\Themes\Generic.xbf" target="lib\uap10.0.18362\Plugin.FontIconControls\Themes"/>
-    <file src="icon.png" target=""/> -->
+    <file src="icon.png" target=""/>
     
     <!-- Debug -->
     <!-- netstandard2.0 -->
-    <file src="bin\Debug\netstandard2.0\Plugin.FontIconControls.dll" target="lib\netstandard2.0\Plugin.FontIconControls.dll" />
+    <!-- <file src="bin\Debug\netstandard2.0\Plugin.FontIconControls.dll" target="lib\netstandard2.0\Plugin.FontIconControls.dll" /> -->
     <!-- uap10.0.18362-->
-    <file src="bin\Debug\uap10.0.18362\Plugin.FontIconControls.dll" target="lib\uap10.0.18362\Plugin.FontIconControls.dll" />
-    <file src="bin\Debug\uap10.0.18362\Plugin.FontIconControls.pri" target="lib\uap10.0.18362\Plugin.FontIconControls.pri" />
-    <file src="bin\Debug\uap10.0.18362\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" target="lib\uap10.0.18362\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" />
-    <file src="Themes\10.0.18362\Generic.xaml" target="lib\uap10.0.18362\Plugin.FontIconControls\Themes"/>
-    <file src="obj\Debug\uap10.0.18362\Themes\Generic.xbf" target="lib\uap10.0.18362\Plugin.FontIconControls\Themes"/>
-    <file src="icon.png" target=""/>
+    <!-- file src="bin\Debug\uap10.0.18362\Plugin.FontIconControls.dll" target="lib\uap10.0.18362\Plugin.FontIconControls.dll" /> -->
+    <!-- <file src="bin\Debug\uap10.0.18362\Plugin.FontIconControls.pri" target="lib\uap10.0.18362\Plugin.FontIconControls.pri" /> -->
+    <!-- <file src="bin\Debug\uap10.0.18362\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" target="lib\uap10.0.18362\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" /> -->
+    <!-- <file src="Themes\10.0.18362\Generic.xaml" target="lib\uap10.0.18362\Plugin.FontIconControls\Themes"/> -->
+    <!-- <file src="obj\Debug\uap10.0.18362\Themes\Generic.xbf" target="lib\uap10.0.18362\Plugin.FontIconControls\Themes"/> -->
+    <!-- <file src="icon.png" target=""/> -->
   </files>
 </package>

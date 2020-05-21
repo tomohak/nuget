@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Plugin.TeachingTipControl;assembly=Plugin.TeachingTipControl"
+             xmlns:vm="clr-namespace:TestTeachingTipControl.ViewModels"
+             mc:Ignorable="d"
+             x:Class="TestTeachingTipControl.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label x:Name="label1" Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <controls:TeachingTipControl x:Name="tip_label"
+                              Title="title1"
+                              Subtitle="subtile1"
+                              Target="{x:Reference label1}"
+                              TailVisibility="Visible"
+                              ActionButtonCommand="{Binding ActionButtonCommand}"
+                              CloseButtonCommand="{Binding CloseButtonCommand}"
+                              ActionButtonContent="Action"
+                              CloseButtonContent="Got it!">
+            <controls:TeachingTipControl.HeroContent>
+                <Image x:Name="bbb" Source="QRCode_20190724_135238.jpg"/>
+            </controls:TeachingTipControl.HeroContent>
+            <controls:TeachingTipControl.Content>
+                <Label Margin="0,16,0,0">To change your desktop theme visit the</Label>
+            </controls:TeachingTipControl.Content>
+            <controls:TeachingTipControl.IconSource>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP" Value="EA37"/>
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </controls:TeachingTipControl.IconSource>
+        </controls:TeachingTipControl>
+
+    </StackLayout>
+
+</ContentPage>

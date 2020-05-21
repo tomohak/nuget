@@ -4,50 +4,32 @@
     <!--Work around so the conditions work below-->
     <TargetFrameworks></TargetFrameworks>
     <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard2.0;uap10.0.18362</TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard2.0</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard2.0;</TargetFrameworks>
     <!--Feel free to add as many targets as you need below
-    netstandard1.0;netstandard2.0;MonoAndroid81;Xamarin.iOS10;uap10.0.18362;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
+    netstandard1.0;netstandard2.0;MonoAndroid90;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
     For UWP update the version number with a version number you have installed.
     -->
-    <AssemblyName>Plugin.FontIconControls</AssemblyName>
-    <RootNamespace>Plugin.FontIconControls</RootNamespace>
-    <PackageId>Plugin.FontIconControls</PackageId>
+    <AssemblyName>Plugin.TeachingTipControl</AssemblyName>
+    <RootNamespace>Plugin.TeachingTipControl</RootNamespace>
+    <PackageId>Plugin.TeachingTipControl</PackageId>
     
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-
-    <!-- 10.0.16299 -->
-    <!--<AssemblyVersion>0.1.2</AssemblyVersion>
-    <AssemblyFileVersion>0.1.2</AssemblyFileVersion>
-    <Version>0.1.2</Version>
-    <PackageVersion>0.1.2</PackageVersion>-->
-
-    <!-- 10.0.17134 -->
-    <!--<AssemblyVersion>1.0.0</AssemblyVersion>
-    <AssemblyFileVersion>1.0.0</AssemblyFileVersion>
-    <Version>1.0.0</Version>
-    <PackageVersion>1.0.0</PackageVersion>-->
-
-    <!-- 10.0.18362 -->
-    <!--<AssemblyVersion>1.0.0</AssemblyVersion>
-    <AssemblyFileVersion>1.0.0</AssemblyFileVersion>
-    <Version>1.0.0</Version>
-    <PackageVersion>1.0.0</PackageVersion>-->
-    
-    <!-- 10.0.19041 -->
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0</AssemblyFileVersion>
     <Version>1.0.0</Version>
     <PackageVersion>1.0.0</PackageVersion>
-    
+
     <PackOnBuild>false</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
     <DefineConstants>$(DefineConstants);</DefineConstants>
-    
+
     <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 
     <LangVersion>latest</LangVersion>
+    
+    <DebugType>portable</DebugType>
     
     <!--TODO: Fill these in-->
     <PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>
@@ -55,9 +37,9 @@
     <RepositoryUrl>LINK TO PROJECT</RepositoryUrl>
     <PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
     <PackageIconUrl>ICON URL</PackageIconUrl>
-    <PackageTags>xamarin, windows, xamarin.forms, plugin, FontIconControls</PackageTags>
+    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, TeachingTipControl</PackageTags>
     
-    <Title>FontIconControls Plugin for Xamarin and Windows</Title>
+    <Title>TeachingTipControl Plugin for Xamarin and Windows</Title>
     <Summary>Summary of nuget</Summary>
     <Description>Plugin Description</Description>
     
@@ -66,6 +48,10 @@
     <Authors>YOU</Authors>
     <Copyright>Copyright 2020</Copyright>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    
+    <!--When built in 2019 will remove extra references on pack-->
+    <DisableExtraReferences>true</DisableExtraReferences>
+    
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
@@ -74,13 +60,14 @@
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)'=='Release' ">
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <DebugType>pdbonly</DebugType>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
   </PropertyGroup>
-  
-  <ItemGroup>
+
+  <ItemGroup>    
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
+    <PackageReference Include="Plugin.FontIconControls" Version="1.0.3" />
     <Compile Include="**\*.shared.cs" />
   </ItemGroup>
 
@@ -88,11 +75,7 @@
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('uap10.0')) ">
-    <Compile Include="**\*.uwp.cs" Exclude="FontIconTabbedPage\Converters\FileImageSourceToFontIconConverter.uwp.cs;FontIconToolbar\Converters\BitmapIconToFontIconConverter.uwp.cs" />
-    <Page Include="Themes\Generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
+    <Compile Include="**\*.uwp.cs" />
     <!--
     If you need to add sdk references:
      <SDKReference Include="WindowsMobile, Version=10.0.16299.0">
@@ -100,35 +83,15 @@
     </SDKReference>
     -->
   </ItemGroup>
-  
+
   <ItemGroup>
-    <None Include="FontIconControls.nuspec">
+    <None Include="TeachingTipControl.nuspec">
       <SubType>Designer</SubType>
     </None>
-    <None Include="FontIconControls_uap10.0.16299.nuspec">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FontIconControls_uap10.0.17134.nuspec">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FontIconControls_uap10.0.18362.nuspec">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FontIconControls_uap10.0.19041.nuspec">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  
-  <!--Additional item groups-->
-  <!--
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
-    <Compile Include="**\*.android.cs" />
   </ItemGroup>
 
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
-    <Compile Include="**\*.apple.cs" />
-  </ItemGroup>
-  
+  <!--Additional item groups-->
+  <!--
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.TVOS')) ">
     <Compile Include="**\*.tvos.cs" />
   </ItemGroup>
@@ -157,5 +120,4 @@
     <Compile Include="**\*.dotnet.cs" />
   </ItemGroup>
   -->
-  
 </Project>

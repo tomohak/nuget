@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Plugin.TeachingTipControl</id>
+    <version>0.9.1</version>
+    <title>Plugin.TeachingTipControl</title>
+    <authors>tomohak</authors>
+    <owners>tomohak</owners>
+    <!-- <licenseUrl>https://github.com/tomohak/xf-plugins/blob/master/LICENSE</licenseUrl> -->
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/tomohak/xf-plugins/tree/master/TeachingTipControl</projectUrl>
+    <!-- <iconUrl>https://raw.githubusercontent.com/tomohak/xf-plugins/master/TeachingTipControl/icon.png</iconUrl> -->
+    <icon>icon.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>TeachingTipControl Plugin for Xamarin and Windows</description>
+    <releaseNotes>This release is targeted for the Windows SDK 10.0.18362.</releaseNotes>
+    <copyright>Copyright 2020 tomohak</copyright>
+    <tags>xamarin, windows, xamarin.forms, plugin, TeachingTipControl</tags>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Xamarin.Forms" version="4.6.0.800" />
+        <dependency id="Plugin.FontIconControls" version="1.0.3" />
+      </group>
+      <group targetFramework="uap10.0.18362">
+        <dependency id="Xamarin.Forms" version="4.6.0.800" />
+        <dependency id="Plugin.FontIconControls" version="1.0.3" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Release -->
+    <!-- netstandard2.0 -->
+    <file src="bin\Release\netstandard2.0\Plugin.TeachingTipControl.dll" target="lib\netstandard2.0\Plugin.TeachingTipControl.dll" />
+    <!-- uap10.0.18362-->
+    <file src="bin\Release\uap10.0.18362\Plugin.TeachingTipControl.dll" target="lib\uap10.0.18362\Plugin.TeachingTipControl.dll" />
+    <file src="bin\Release\uap10.0.18362\Plugin.TeachingTipControl.pri" target="lib\uap10.0.18362\Plugin.TeachingTipControl.pri" />
+    <file src="icon.png" target=""/>
+
+    <!-- Debug -->
+    <!-- netstandard2.0 -->
+    <!--<file src="bin\Debug\netstandard2.0\Plugin.TeachingTipControl.dll" target="lib\netstandard2.0\Plugin.TeachingTipControl.dll" />-->
+    <!-- uap10.0.18362-->
+    <!--<file src="bin\Debug\uap10.0.18362\Plugin.TeachingTipControl.dll" target="lib\uap10.0.18362\Plugin.TeachingTipControl.dll" />
+    <file src="bin\Debug\uap10.0.18362\Plugin.TeachingTipControl.pri" target="lib\uap10.0.18362\Plugin.TeachingTipControl.pri" />
+    <file src="icon.png" target=""/>-->
+  </files>
+</package>

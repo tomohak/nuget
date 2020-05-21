@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Plugin.FontIconControls" Version="1.0.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991477" />  
+    <PackageReference Include="Plugin.FontIconControls" Version="1.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />  
   </ItemGroup>
 
   <ItemGroup>

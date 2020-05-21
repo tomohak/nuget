@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Plugin.FontIconControls</id>
+    <version>1.0.0</version>
+    <title>Plugin.FontIconControls</title>
+    <authors>tomohak</authors>
+    <owners>tomohak</owners>
+    <!-- <licenseUrl>https://github.com/tomohak/xf-plugins/blob/master/LICENSE</licenseUrl> -->
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/tomohak/xf-plugins/tree/master/FontIconControls</projectUrl>
+    <!-- <iconUrl>https://raw.githubusercontent.com/tomohak/xf-plugins/master/FontIconControls/icon.png</iconUrl> -->
+    <icon>icon.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FontIconControls Plugin for Xamarin and Windows</description>
+    <releaseNotes>This release is targeted for the Windows SDK 10.0.19041.</releaseNotes>
+    <copyright>Copyright 2020 tomohak</copyright>
+    <tags>xamarin, windows, xamarin.forms, plugin, FontIconControls</tags>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Xamarin.Forms" version="4.6.0.772" />
+      </group>
+      <group targetFramework="uap10.0.19041">
+        <dependency id="Xamarin.Forms" version="4.6.0.772" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Release -->    
+    <!-- netstandard2.0 -->
+    <file src="bin\Release\netstandard2.0\Plugin.FontIconControls.dll" target="lib\netstandard2.0\Plugin.FontIconControls.dll" />
+    <!-- uap10.0.19041-->
+    <file src="bin\Release\uap10.0.19041\Plugin.FontIconControls.dll" target="lib\uap10.0.19041\Plugin.FontIconControls.dll" />
+    <file src="bin\Release\uap10.0.19041\Plugin.FontIconControls.pri" target="lib\uap10.0.19041\Plugin.FontIconControls.pri" />
+    <file src="bin\Release\uap10.0.19041\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" target="lib\uap10.0.19041\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" />
+    <file src="Themes\10.0.19041\Generic.xaml" target="lib\uap10.0.19041\Plugin.FontIconControls\Themes"/>
+    <file src="obj\Release\uap10.0.19041\Themes\Generic.xbf" target="lib\uap10.0.19041\Plugin.FontIconControls\Themes"/>
+    <file src="icon.png" target=""/>
+    
+    <!-- Debug -->
+    <!-- netstandard2.0 -->
+    <!-- <file src="bin\Debug\netstandard2.0\Plugin.FontIconControls.dll" target="lib\netstandard2.0\Plugin.FontIconControls.dll" /> -->
+    <!-- uap10.0.19041-->
+    <!-- <file src="bin\Debug\uap10.0.19041\Plugin.FontIconControls.dll" target="lib\uap10.0.19041\Plugin.FontIconControls.dll" />
+    <file src="bin\Debug\uap10.0.19041\Plugin.FontIconControls.pri" target="lib\uap10.0.19041\Plugin.FontIconControls.pri" />
+    <file src="bin\Debug\uap10.0.19041\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" target="lib\uap10.0.19041\Plugin.FontIconControls\Plugin.FontIconControls.xr.xml" />
+    <file src="Themes\10.0.19041\Generic.xaml" target="lib\uap10.0.19041\Plugin.FontIconControls\Themes"/>
+    <file src="obj\Debug\uap10.0.19041\Themes\Generic.xbf" target="lib\uap10.0.19041\Plugin.FontIconControls\Themes"/>
+    <file src="icon.png" target=""/> -->
+  </files>
+</package>
