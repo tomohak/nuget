@@ -17,7 +17,7 @@ Custom TeachingTip congrol for UWP in Xamarin.Forms project.
 Add the xmlns namespace to ContentPage in your Shared project:
 
 ```xml
-xmlns:controls="clr-namespace:Plugin.FontIconControls;assembly=Plugin.FontIconControls"
+xmlns:controls="clr-namespace:Plugin.TeachingTipControl;assembly=Plugin.TeachingTipControl"
 ```
 
 Add the TeachingTipControl to ContentPage:
