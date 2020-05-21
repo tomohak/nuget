@@ -30,15 +30,14 @@
                               ActionButtonContent="Action"
                               CloseButtonContent="Got it!">
             <controls:TeachingTipControl.HeroContent>
-                <Image x:Name="bbb" Source="QRCode_20190724_135238.jpg"/>
+                <Image x:Name="image1" Source="StoreLogo.scale-200.png"/>
             </controls:TeachingTipControl.HeroContent>
             <controls:TeachingTipControl.Content>
-                <Label Margin="0,16,0,0">To change your desktop theme visit the</Label>
+                <Label Margin="0,16,0,0">Content Text Sample</Label>
             </controls:TeachingTipControl.Content>
             <controls:TeachingTipControl.IconSource>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="UWP" Value="EA37"/>
-                    <On Platform="iOS" Value="tab_feed.png"/>
                 </OnPlatform>
             </controls:TeachingTipControl.IconSource>
         </controls:TeachingTipControl>
